@@ -1,0 +1,552 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+body {
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	  background-color: #d1d5da;
+	}
+
+a:link {
+  color: #fff;
+}
+
+/* visited link */
+a:visited {
+  color: #fff;
+}
+
+/* mouse over link */
+a:hover {
+  color: #fff;
+}
+
+/* selected link */
+a:active {
+  color: #fff;
+}
+
+	#navbar {
+	  background-color: #24292e;
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	  transition: top 0.5s;
+	}
+.menu_container{
+  display:none;
+}
+
+	img.profile_img{
+		float:right;
+		width:45px;
+		margin:10px;
+	}
+	p.dev_android {
+	  color:#d1d5da;
+	  font-size:30px;
+	   text-align: center;
+	    position: relative;
+	   margin:20px;
+	   animation: myfirst 2s;
+	}
+	div.github_icon{
+		float:left;
+		width:40px;
+		margin:10px;
+	}
+	
+	footer.foot {
+	  background-color: #24292e;
+	  position:absolute;
+	  width: 100%;
+	  font-color:#d1d5da;
+	}
+	p.copyright {
+	  color:#d1d5da;
+	  font-size:15px;
+	   text-align: center;
+	   margin:10px;
+	   font-size:30px;
+	}
+
+
+	@keyframes myfirst {
+	  0%   { left: -20%;}
+	  100% { left: 0%; }
+	}
+
+	.docs{
+		 margin-top:150px;
+	}
+
+a.docs_links:link {
+  color: #fff;
+   background-color: #24292e;
+   padding:5px;
+   border-radius:10px;
+}
+
+/* visited link */
+a.docs_links:visited {
+ color: #fff;
+   background-color: #24292e;
+   padding:5px;
+   border-radius:10px;
+}
+
+/* mouse over link */
+a.docs_links:hover {
+color: #fff;
+   background-color: #24292e;
+   padding:5px;
+   border-radius:10px;
+}
+
+/* selected link */
+a.docs_links:active {
+  color: #fff;
+   background-color: #24292e;
+   padding:5px;
+   border-radius:10px;
+}
+
+
+@media (min-width: 1281px) {
+  body {
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	  background-color: #d1d5da;
+	}
+
+a:link {
+  color: #fff;
+}
+
+/* visited link */
+a:visited {
+  color: #fff;
+}
+
+/* mouse over link */
+a:hover {
+  color: #fff;
+}
+
+/* selected link */
+a:active {
+  color: #fff;
+}
+
+	#navbar {
+	  background-color: #24292e;
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	  transition: top 0.5s;
+	}
+.menu_container{
+  display:none;
+}
+
+	img.profile_img{
+		float:right;
+		width:45px;
+		margin:10px;
+	}
+	p.dev_android {
+	  color:#d1d5da;
+	  font-size:30px;
+	   text-align: center;
+	    position: relative;
+	   margin:20px;
+	   animation: myfirst 2s;
+	}
+	div.github_icon{
+		float:left;
+		width:40px;
+		margin:10px;
+	}
+	
+	footer.foot {
+	  background-color: #24292e;
+	  position:absolute;
+	  width: 100%;
+	  font-color:#d1d5da;
+	}
+	p.copyright {
+	  color:#d1d5da;
+	  font-size:15px;
+	   text-align: center;
+	   margin:10px;
+	   font-size:30px;
+	}
+
+
+	@keyframes myfirst {
+	  0%   { left: -20%;}
+	  100% { left: 0%; }
+	}
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body {
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	  background-color: #d1d5da;
+	}
+
+a:link {
+  color: #fff;
+}
+
+/* visited link */
+a:visited {
+  color: #fff;
+}
+
+/* mouse over link */
+a:hover {
+  color: #fff;
+}
+
+/* selected link */
+a:active {
+  color: #fff;
+}
+
+	#navbar {
+	  background-color: #24292e;
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	  transition: top 0.5s;
+	}
+.menu_container{
+  display:none;
+}
+
+	img.profile_img{
+		float:right;
+		width:45px;
+		margin:10px;
+	}
+	p.dev_android {
+	  color:#d1d5da;
+	  font-size:30px;
+	   text-align: center;
+	    position: relative;
+	   margin:20px;
+	   animation: myfirst 2s;
+	}
+	div.github_icon{
+		float:left;
+		width:40px;
+		margin:10px;
+	}
+	
+	footer.foot {
+	  background-color: #24292e;
+	  position:absolute;
+	  width: 100%;
+	  font-color:#d1d5da;
+	}
+	p.copyright {
+	  color:#d1d5da;
+	  font-size:15px;
+	   text-align: center;
+	   margin:10px;
+	   font-size:30px;
+	}
+
+
+	@keyframes myfirst {
+	  0%   { left: -20%;}
+	  100% { left: 0%; }
+	}
+  /* CSS */
+  
+}
+
+
+
+
+/* 
+CELULARES
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+
+.container {
+  cursor: pointer;
+    width: 10%;
+    float:right;
+     margin: 20px;
+}
+
+
+.menu_container{
+	display:none; 
+}
+
+.menu_container_show{
+	 margin: 100px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 70px;
+  height: 10px;
+  background-color: #fff;
+  margin: 14px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(57px, -50px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-85px, -90px);
+}
+	
+  img.profile_img{	
+	display:none;
+	}
+	div.github_icon{
+		 display:none;
+	}
+	p.dev_android {
+	   color:#d1d5da;
+	   font-size:50px;
+	   margin:20px;
+	   position: relative;
+	  float:left;
+	   animation: mySecond 2s;
+	}
+		@keyframes mySecond {
+	  0%   { left: 20%;}
+	  100% { left: 0%; }
+	}
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+.container {
+  cursor: pointer;
+    width: 10%;
+    float:right;
+     margin: 20px;
+}
+
+
+.menu_container{
+	display:none; 
+}
+
+.menu_container_show{
+	 margin: 100px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 70px;
+  height: 10px;
+  background-color: #fff;
+  margin: 14px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(57px, -50px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-85px, -90px);
+}
+	
+  img.profile_img{	
+	display:none;
+	}
+	div.github_icon{
+		 display:none;
+	}
+	p.dev_android {
+	   color:#d1d5da;
+	   font-size:50px;
+	   margin:20px;
+	   position: relative;
+	  float:left;
+	   animation: mySecond 2s;
+	}
+		@keyframes mySecond {
+	  0%   { left: 20%;}
+	  100% { left: 0%; }
+	}
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+.container {
+  cursor: pointer;
+    width: 10%;
+    float:right;
+     margin: 20px;
+}
+
+
+.menu_container{
+	display:none; 
+}
+
+.menu_container_show{
+	 margin: 100px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 70px;
+  height: 10px;
+  background-color: #fff;
+  margin: 14px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(57px, -50px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-85px, -90px);
+}
+	
+  img.profile_img{	
+	display:none;
+	}
+	div.github_icon{
+		 display:none;
+	}
+	p.dev_android {
+	   color:#d1d5da;
+	   font-size:50px;
+	   margin:20px;
+	   position: relative;
+	  float:left;
+	   animation: mySecond 2s;
+	}
+		@keyframes mySecond {
+	  0%   { left: 20%;}
+	  100% { left: 0%; }
+	}
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+.container {
+  cursor: pointer;
+    width: 10%;
+    float:right;
+     margin: 10px;
+}
+
+
+.menu_container{
+	display:none; 
+}
+
+.menu_container_show{
+	 margin: 100px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 40px;
+  height: 5px;
+  background-color: #fff;
+  margin: 10px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(47px, -65px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-85px, -70px);
+}
+
+	
+img.profile_img{
+		float:right;
+		width:45px;
+		margin:10px;
+		display:none;
+	}
+	div.github_icon{
+		float:left;
+		width:40px;
+		margin:10px;
+		 display:none;
+	}
+	p.dev_android {
+	   color:#d1d5da;
+	   font-size:30px;
+	   margin:20px;
+	   position: relative;
+	  float:left;
+	   animation: mySecond 2s;
+	}
+		@keyframes mySecond {
+	  0%   { left: 20%;}
+	  100% { left: 0%; }
+	}
+  /* CSS */
+  
+}
+
+
