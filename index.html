@@ -2,96 +2,639 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
 <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.css" rel="stylesheet"></link>
 <link href="css/style.css" rel="stylesheet"></link>
 
 </head>
 <body>
-<div id="navbar">
-  <a href="https://github.com/Allanksr" target="_blank"><div alt="github icon" id="github_icon_id" class="github_icon"></div></a>
-  <a href="https://console.firebase.google.com/" target="_blank"><img alt="developer image" class="profile_img" src="img/firebase_28dp.png" /></a>
-  <p class="dev_android">Firebase Android</p> 
-	  <div align="center">
-		   <div class="container" onclick="showHideHamburguer(this)">
-			   <div class="bar1"></div>
-			   <div class="bar2"></div>
-			   <div class="bar3"></div>
-		   </div>
-			  <div id="menu_container_action" class="menu_container">
-			  <button type="button" class="btn btn-outline-secondary menu_links"><a href="https://play.google.com/store/apps/dev?id=6061636122303064973" target="_blank">Aplicativos</a></button>
-			  <button type="button" class="btn btn-outline-secondary menu_links"><a href="https://stackoverflow.com/users/6800637/allanribas" target="_blank">Stackoverflow</a></button>
-			  <button type="button" class="btn btn-outline-secondary menu_links"><a href="https://github.com/Allanksr" target="_blank">Github</a></button>
-			  <button type="button" class="btn btn-outline-secondary menu_links"><a href="https://www.npmjs.com/~allanksr" target="_blank">Npm</a></button>
-			  <button type="button" class="btn btn-outline-secondary menu_links"><a href="https://lottiefiles.com/allanksr" target="_blank">LottieFiles</a></button>
-			  <button type="button" class="btn btn-outline-secondary menu_links"><a href="https://twitter.com/Allanksr" target="_blank">Twitter</a></button>
-			  <button type="button" class="btn btn-outline-secondary menu_links"><a href="https://www.linkedin.com/in/allanksr/" target="_blank">Linkedin</a></button>
-			  <button type="button" class="btn btn-outline-secondary menu_links"><a href="https://www.youtube.com/allanksr" target="_blank">Youtube</a></button>
-			  <button type="button" class="btn btn-outline-secondary menu_links"><a href="https://www.instagram.com/desenvolvedorbr/" target="_blank">Instagram</a></button>
+	<div id="navbar">
+	  <a href="https://github.com/Allanksr" target="_blank"><div alt="github icon" id="github_icon_id" class="github_icon"></div></a>
+	  <a href="https://console.firebase.google.com/" target="_blank"><img alt="developer image" class="profile_img" src="img/icons/firebase_28dp.png" /></a>
+	  <p class="dev_android">Firebase Android</p> 
+		  <div align="center">
+			   <div class="container" onclick="showHideHamburguer(this)">
+				   <div class="bar1"></div>
+				   <div class="bar2"></div>
+				   <div class="bar3"></div>
+			   </div>
+				  <div id="menu_container_action" class="menu_container">
+				  <a href="https://github.com/Allanksr" target="_blank"><img alt="github icon" src="img/icons/github.png" width="60px" /></a>
+				  <a href="https://console.firebase.google.com/" target="_blank"><img alt="developer image" src="img/icons/firebase_28dp.png" width="60px" /></a>
+				  </div>
+			   </div>
+		</div>
+	
+
+   <div class="docs">
+   
+   
+		 <h1>Firebase Android</h1>
+		   <p>In this project, the implementation of the following Firebase services is available</p>
+		   <p><a style="background-color: white; padding:5px; border-radius:10px; color:blue;" href="https://www.youtube.com/watch?v=dRYnm_k3w1w" target="_blank">Getting started with Firebase on Android</a></p>	
+
+		<div class="divStyle" id="authService">
+		<strong>AUTHENTICATION</strong>
+		<img alt="plusAuth" onclick="authMethods()" id="plusAuth" src="img/icons/plus.svg" width="30px" />
+		  <table style="display:none;" class="table">
+			<tbody>
+				<tr>
+				  <th>Providers</th>
+				  <th>Description</th>
+				</tr>		
+				<tr>
+				  <td><img alt="Email/password" src="https://gist.githubusercontent.com/Allanksr/6651ab2df9c4a96ffe57cb0d1c7feffe/raw/09ca68cca859df77dad3def6219b4bdf037ff122/email.svg" width="30px" /></td>
+				  <td>
+				  <a class="docs_links" href="https://firebase.google.com/docs/auth/android/email-link-auth" target="_blank">Email/password</a>	
+				  
+					<img alt="plusEmail" onclick="emailHint()" id="plusEmail" src="img/icons/plus.svg" width="30px" />
+					  <div id="emailHint" style="display:none;">						  						 																				  
+						   <div>
+							   <strong>								   
+							<p>In this method we can also authenticate without a password, but for that we need a dynamic link.</p>
+							<p>To our happiness, Firebase also offers this service for free.</p>
+							<p>In the side menu we have Dynamic Link.</p>
+							<p>Create a link:</p>
+							  <img onclick="imageInflate(this.src)" alt="dynamic_Links" src="img/email/dynamic_Links.png" width="300px" />
+							<p>Then on the Authentication / Sign-in method tab, authorize the domain you just created:</p>
+								 
+									<img onclick="imageInflate(this.src)" alt="authorize_domain" src="img/email/authorize_domain.png" width="300px" />
+									<hr />
+								  <p>In the <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://console.firebase.google.com/u/0/" target="_blank">Firebase console</a>, open the Auth section.</p>
+								  <p>And of course don't forget to activate the Sign-in method in Firebase:</p>	     
+							   </strong>
+						   </div>	
+						  <img alt="plusEmail" onclick="emailHint()" id="plusEmail" src="img/icons/minus.svg" width="30px" />							   
+					  </div>
+				  
+				  </td>		  
+				</tr>		
+				<tr>
+				  <td><img alt="Smartphone" src="https://gist.githubusercontent.com/Allanksr/841b03d95e463fa951522b90c3a81bce/raw/e55b704301fbb2f4e3872c69417b014b25186fe8/phone.svg" width="30px" /></td>
+				  <td>
+				  <a class="docs_links" href="https://firebase.google.com/docs/auth/android/phone-auth" target="_blank">Smartphone</a>		  
+				   <img alt="plusSmartphone" onclick="phoneHint()" id="plusSmartphone" src="img/icons/plus.svg" width="30px" />
+					  <div id="phoneHint" style="display:none;">						  						 																				  
+						   <div>
+							   <strong>
+							   <p>When we want to authenticate a user using a phone number, we need to define SHA1 in the Firebase panel:</p>
+								<img onclick="imageInflate(this.src)" alt="sha1_in_firebase" src="img/smartphone/sha1_in_firebase.png" width="300px" />
+							   <p>In this case we will use the application test sha1 in Android Studio:</p>
+								<img onclick="imageInflate(this.src)" alt="get_sha1_test" src="img/smartphone/get_sha1_test.png" width="300px" />
+								<hr />
+								<p>In the <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://console.firebase.google.com/u/0/" target="_blank">Firebase console</a>, open the Auth section.</p>
+							   <p>And of course don't forget to activate the Sign-in method in Firebase:</p>				  
+							   <p>we need google-services.json at our app's app level:</p>
+								<img onclick="imageInflate(this.src)" alt="google-services" src="img/smartphone/google-services.png" width="300px" />
+								<hr />	
+							   </strong>
+						   </div>	
+						 <img alt="plusSmartphone" onclick="phoneHint()" id="plusSmartphone" src="img/icons/minus.svg" width="30px" />							   
+					  </div>
+				  </td>
+				</tr>		
+				<tr>
+				  <td><img alt="Google" src="https://gist.githubusercontent.com/Allanksr/dc16bd399c242f0137ca34f09f66e131/raw/e8c8d3624e84278a33e4c237c63c49e314319a94/google.svg" width="30px" /></td>
+				  <td>
+				  <a class="docs_links" href="https://developers.google.com/android/guides/client-auth?authuser=0" target="_blank">Google</a>
+				   <img alt="plusGoogle" onclick="googleHint()" id="plusGoogle" src="img/icons/plus.svg" width="30px" />
+					  <div id="googleHint" style="display:none;">
+						   <div>
+							   <strong>
+							   <p>When we want to authenticate a user using Google, we need to create consent screen in:</p>
+							   <p>https://console.cloud.google.com/apis/credentials/consent?project=project_Id</p>
+							   <p>And of course we need to define SHA1 in the Firebase panel as we have done above</p>
+								<img onclick="imageInflate(this.src)" alt="create_consent_screen" src="img/google/create_consent_screen.png" width="300px" />
+								<hr />
+							   <p>When we want to authenticate a user using Google, we need to define SHA1 in the Firebase panel as we have done above:</p>
+								<img onclick="imageInflate(this.src)" alt="sha1_in_firebase" src="img/smartphone/sha1_in_firebase.png" width="300px" />
+								 <hr />									
+							   <p>In this case we will use the application test sha1 in Android Studio:</p>
+								<img onclick="imageInflate(this.src)" alt="get_sha1_test" src="img/smartphone/get_sha1_test.png" width="300px" />
+								<hr />
+							   <p>We need our OAuth 2.0 client IDs:</p>
+							   <p>https://console.cloud.google.com/apis/credentials/oauthclient</p>
+								<img onclick="imageInflate(this.src)" alt="default_web_client_id" src="img/google/default_web_client_id.png" width="300px" />
+								<hr />
+							   <p>we need google-services.json at our app's app level:</p>
+								<img onclick="imageInflate(this.src)" alt="google-services" src="img/smartphone/google-services.png" width="300px" />
+								<hr />
+								<p>In the <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://console.firebase.google.com/u/0/" target="_blank">Firebase console</a>, open the Auth section.</p>
+							   <p>And of course don't forget to activate the Sign-in method in Firebase:</p>						  
+							  <p>If you haven't yet specified your app's SHA-1 fingerprint, do so now</p>
+								<p>we need to define SHA1 in the Firebase panel as we have done above:</p>
+							   <img onclick="imageInflate(this.src)" alt="sha1_in_firebase" src="img/smartphone/sha1_in_firebase.png" width="300px" />
+							   <hr />
+							   <p>In this case we will use the application test sha1 in Android Studio:</p>
+								<img onclick="imageInflate(this.src)" alt="get_sha1_test" src="img/smartphone/get_sha1_test.png" width="300px" />
+								<hr />
+							  </strong>
+						  </div> 
+						  <img alt="plusGoogle" onclick="googleHint()" id="plusGoogle" src="img/icons/minus.svg" width="30px" />
+					  </div>					  
+				  </td>
+				</tr>		
+				<tr>
+				  <td><img alt="Play Games" src="https://gist.githubusercontent.com/Allanksr/dc16bd399c242f0137ca34f09f66e131/raw/e8c8d3624e84278a33e4c237c63c49e314319a94/playgames.svg" width="30px" /></td>
+					  <td>
+					  <a class="docs_links" href="https://firebase.google.com/docs/auth/android/play-games" target="_blank">Play Games</a>					  
+						<img alt="plusGames" onclick="gamesHint()" id="plusGames" src="img/icons/plus.svg" width="30px" />
+					  <div id="gamesHint" style="display:none;">
+						   <div>
+							   <strong>
+							   <p>Before starting, in order to use the Play Games authentication method,</p>
+							   <p>we must have a google play developer account.</p>
+								 <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://play.google.com/apps/publish" target="_blank">Apps/Publish</a>
+							   <p>We don't need to publish a game to test this method, just create one on the google play store.</p>
+							   <p>Create an app in the store and define it as a game.</p>
+								<img onclick="imageInflate(this.src)" alt="create_game" src="img/playgames/create_game.png" width="300px" />
+								<hr />
+							   <p> Now in Google Play game-related service settings.</p>
+							   <p>Yes, my game already uses Google APIs.<p>
+							   <p><p>Select the same Google Cloud Project.</p>
+							   <p>And click USE, ready, now you can continue the configuration.</p>
+								<img onclick="imageInflate(this.src)" alt="use_game" src="img/playgames/use_game.png" width="300px" />
+							   <p>When we want to authenticate a user using Play Games, we need to create consent screen in:</p>
+							   <p>https://console.cloud.google.com/apis/credentials/consent?project=project_Id</p>
+							   <p>And of course we need to define SHA1 in the Firebase panel as we have done above</p>
+								<img onclick="imageInflate(this.src)" alt="create_consent_screen" src="img/google/create_consent_screen.png" width="300px" />
+								<hr />
+							   <p>When we want to authenticate a user using Play Games,</p>
+							   <p>we need to define SHA1 in the Firebase panel as we have done above:</p>
+							   <img onclick="imageInflate(this.src)" alt="sha1_in_firebase" src="img/smartphone/sha1_in_firebase.png" width="300px" />
+							   <hr />
+							   <p>In this case we will use the application test sha1 in Android Studio:</p>
+								<img onclick="imageInflate(this.src)" alt="get_sha1_test" src="img/smartphone/get_sha1_test.png" width="300px" />
+								<hr />
+							   <p>We need our OAuth 2.0 client IDs:</p>
+							   <p>https://console.cloud.google.com/apis/credentials/oauthclient</p>
+							   <img onclick="imageInflate(this.src)" alt="default_web_client_id" src="img/google/default_web_client_id.png" width="300px" />
+							   <hr />
+							   <p>we need google-services.json at our app's app level:</p>
+								<img onclick="imageInflate(this.src)" alt="google-services" src="img/smartphone/google-services.png" width="300px" />
+								<hr />
+								<p>In the <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://console.firebase.google.com/u/0/" target="_blank">Firebase console</a>, open the Auth section.</p>
+							   <p>And of course don't forget to activate the Sign-in method in Firebase:</p>						  
+							  </strong>
+						  </div> 
+						  <img alt="plusGames" onclick="gamesHint()" id="plusGames" src="img/icons/minus.svg" width="30px" />
+					  </div>
+					  </td>
+				</tr>		
+				<tr>
+				  <td><img alt="Facebook" src="https://gist.githubusercontent.com/Allanksr/dc16bd399c242f0137ca34f09f66e131/raw/e8c8d3624e84278a33e4c237c63c49e314319a94/facebook.svg" width="30px" /></td>
+					<td>
+					  <a class="docs_links" href="https://firebase.google.com/docs/auth/android/facebook-login?authuser=0" target="_blank">Facebook</a>				  
+					   <img alt="plusFace" onclick="faceHint()" id="plusFace" src="img/icons/plus.svg" width="30px" />
+						  <div id="faceHint" style="display:none;">
+							   <div>
+								 <strong>
+									  <p>Create an app on Developer Facebook, write down the app ID and complete the setup steps</p>
+									   <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://developers.facebook.com/" target="_blank">Developer Facebook</a>
+									   <hr />
+										<img onclick="imageInflate(this.src)" alt="facebook_app_id" src="img/facebook/facebook_app_id.png" width="300px" />
+										<hr />
+									  <p>After choosing the type of application that should be Android,</p>
+									  <p>go to part 3 and define the package name and the deep link and save, in our case it looks like this:</p>
+										<img onclick="imageInflate(this.src)" alt="facebook_app_package_deeplinkingactivity" src="img/facebook/facebook_app_package_deeplinkingactivity.png" width="300px" />
+									  <p>click Use this package name. And continue</p>
+										<img onclick="imageInflate(this.src)" alt="use_this_name" src="img/facebook/use_this_name.png" width="300px" />
+										<hr />
+									  <p>4. Add your development and launch key hashes</p>									   
+									  <p>You will need the following:</p>
+									  <p>Certificate and key management tool (keytool) from the Java Development Kit</p>
+										<a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://code.google.com/archive/p/openssl-for-windows/downloads" target="_blank"> 
+										  openssl-for-windows 
+										</a> 
+										<p>openssl library for Windows from Google</p> 
+										<a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://code.google.com/archive/p/openssl-for-windows/downloads" target="_blank"> 
+										Google Code Archive
+										</a>
+									  <p>To generate a development key hash, run the following command at a command prompt in the SDK for Java folder:</p>
+									  <p>After extract folder in C:/, go inside your jdk/bin folder, open CMD type cd C:\Program Files\Java\jdk1.8.0_144\bin</p>
+									  <hr />
+										  <div style="padding-top:10px; width:40%;overflow:auto; background-color:white; border-radius:10px; color:black;">					   
+											<p>keytool -exportcert -alias androiddebugkey -keystore "C:\Users\computerName\.android\debug.keystore" | "C:\openssl\bin\openssl" sha1 -binary | "C:\openssl\bin\openssl" base64</p>
+										  </div>								   												  	
+									  <p>To find the debug.keystore.Go to drive C:\Users\computerName\.android</p>
+									  <p>Keystore name: "debug.keystore"</p>
+									  <p>Keystore password: "android"</p>
+									  <p>Key alias: "androiddebugkey"</p>
+									  <p>Key password: "android"</p>
+										<img onclick="imageInflate(this.src)" alt="debug_keystore" src="img/facebook/debug_keystore.png" width="300px" />
+										<hr />
+									  <p>Hashes of keys</p>
+									  <img onclick="imageInflate(this.src)" alt="hashes_of_keys" src="img/facebook/hashes_of_keys.png" width="300px" />
+									  <hr />
+									  <p>set Hash</p>
+										<img onclick="imageInflate(this.src)" alt="hash_save_continue" src="img/facebook/hash_save_continue.png" width="300px" />
+										<hr />
+									  <p>Save and continue</p>
+									  <p>In your Facebook dev panel settings/basic/</p>
+									  <p>get the application ID and the Application Secret Key</p>
+										<img onclick="imageInflate(this.src)" alt="facebook_keys" src="img/facebook/facebook_keys.png" width="300px" />
+										<hr />
+									  <p>In the <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://console.firebase.google.com/u/0/" target="_blank">Firebase console</a>, open the Auth section.</p>
+									  <p>In Facebook Login providers, we will need the application ID and the Application Secret Key</p>
+										<img onclick="imageInflate(this.src)" alt="firebase_facebook_settings" src="img/facebook/firebase_facebook_settings.png" width="300px" />
+										<hr />
+									  <p>and we’ll put the OAuth redirect URI to your Facebook app configuration.</p>
+										<a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://firebase.google.com/docs/auth/?authuser=0" target="_blank"> know more</a>
+									  <p>and In your Facebook dev panel  fb-login/settings/ Client OAuth settings</p>
+									  <p>set your OAuth redirect URI that you got on firebase</p>
+										<img onclick="imageInflate(this.src)" alt="oauth_redirect_uri" src="img/facebook/oauth_redirect_uri.png" width="300px" />
+										<hr />
+									  <p>You can test using test users or only with your administrator account</p>
+										<img onclick="imageInflate(this.src)" alt="test_users" src="img/facebook/test_users.png" width="300px" />
+										<hr />
+										<img onclick="imageInflate(this.src)" alt="facebook_login_success" src="img/facebook/facebook_login_success.png" width="300px" />
+								<p>If you haven't yet specified your app's SHA-1 fingerprint, do so now</p>
+								<p>we need to define SHA1 in the Firebase panel as we have done above:</p>
+							   <img onclick="imageInflate(this.src)" alt="sha1_in_firebase" src="img/smartphone/sha1_in_firebase.png" width="300px" />
+							   <hr />
+							   <p>In this case we will use the application test sha1 in Android Studio:</p>
+								<img onclick="imageInflate(this.src)" alt="get_sha1_test" src="img/smartphone/get_sha1_test.png" width="300px" />
+								<hr />
+								</strong>
+							</div>
+								<img alt="plusFace" onclick="faceHint()" id="plusFace" src="img/icons/minus.svg" width="30px" />
+						</div>
+					  
+					</td>
+				</tr>		
+				<tr>
+				  <td><img alt="Twitter" src="https://gist.githubusercontent.com/Allanksr/dc16bd399c242f0137ca34f09f66e131/raw/e8c8d3624e84278a33e4c237c63c49e314319a94/twitter.svg" width="30px" /></td>
+				 
+				 <td><a class="docs_links" href="https://firebase.google.com/docs/auth/android/twitter-login?authuser=0" target="_blank">Twitter</a>
+				  <img alt="plusTwitter" onclick="twitterHint()" id="plusTwitter" src="img/icons/plus.svg" width="30px" />
+					  <div id="twitterHint" style="display:none;">					 
+						  <div>
+							   <strong>
+								 <p>In the <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://console.firebase.google.com/u/0/" target="_blank">Firebase console</a>, open the Auth section.</p>
+								  <p>and activate the Twitter login method,</p>
+								  <p>which will ask for two keys that we will get next from the Twitter developer panel,</p>
+								  <p>note the url provided by Firebase that we will use on Twitter</p>
+									<img onclick="imageInflate(this.src)" alt="firebase_twitter_keys" src="img/twitter/firebase_twitter_keys.png" width="300px" />
+									<hr />
+								  <p>Log in to your account and create a project,</p>
+								  <p>to add your callback URL to your Twitter application configuration and get both keys requested in Firebase</p>
+									<a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://developer.twitter.com/en/apps" target="_blank">Developer Twitter</a>
+								  <p>after creating your application you will see a screen like this:</p>
+								   <p>find Authentication settings</p>
+									 <img onclick="imageInflate(this.src)" alt="twitter_authentication_settings" src="img/twitter/twitter_authentication_settings.png" width="300px" />
+									<hr />
+									  <img onclick="imageInflate(this.src)" alt="keys_tokens_twitter" src="img/twitter/keys_tokens_twitter.png" width="300px" />
+									  <hr />
+								 <p>click on Keys and tokens</p>
+								 <p>select your keys and use in Firebase in the requested fields</p>
+									<img onclick="imageInflate(this.src)" style="border: 3px solid red;" alt="keys_tokens_twitter_show" src="img/twitter/keys_tokens_twitter_show.png" width="300px" />
+									<img onclick="imageInflate(this.src)" style="border: 3px solid red;" alt="keys_tokens_twitter_on_firebase" src="img/twitter/keys_tokens_twitter_on_firebase.png" width="300px" />
+								<p>If you haven't yet specified your app's SHA-1 fingerprint, do so now</p>
+								<p>we need to define SHA1 in the Firebase panel as we have done above:</p>
+							   <img onclick="imageInflate(this.src)" alt="sha1_in_firebase" src="img/smartphone/sha1_in_firebase.png" width="300px" />
+							   <hr />
+							   <p>In this case we will use the application test sha1 in Android Studio:</p>
+								<img onclick="imageInflate(this.src)" alt="get_sha1_test" src="img/smartphone/get_sha1_test.png" width="300px" />
+								<hr />
+								</strong>
+						   </div>
+						  <img alt="plusTwitter" onclick="twitterHint()" id="plusTwitter" src="img/icons/minus.svg" width="30px" />
+					   </div> 
+				 </td>				 
+				</tr>		
+				<tr>
+				  <td><img alt="Github" src="https://gist.githubusercontent.com/Allanksr/dc16bd399c242f0137ca34f09f66e131/raw/e8c8d3624e84278a33e4c237c63c49e314319a94/github.svg" width="30px" /></td>
+				  <td><a class="docs_links" href="https://firebase.google.com/docs/auth/android/github-auth?authuser=0" target="_blank">Github</a>
+				  
+				  <img alt="plusGithub" onclick="githubHint()" id="plusGithub" src="img/icons/plus.svg" width="30px" />
+				  
+				  
+					  <div id="githubHint" style="display:none;">					 
+						  <div>
+						   <strong>
+							   <p>In the <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://console.firebase.google.com/u/0/" target="_blank">Firebase console</a>, open the Auth section.</p>						  
+							   <p>and activate the Github login method,</p>							  
+							   <p>which will ask for two keys that we will get next from the Github developer panel,</p>							   
+							   <p>note the url provided by Firebase that we will use on Github</p>
+								 <img onclick="imageInflate(this.src)" alt="firebase_github_keys" src="img/github/firebase_github_keys.png" width="300px" />
+								 <hr />
+							   <p>Log in to your Github account go to settings, to create an OAuth application</p>								 
+								  <img onclick="imageInflate(this.src)" alt="developer_settings" src="img/github/developer_settings.png" width="300px" />
+									 <hr />
+								  <img onclick="imageInflate(this.src)" alt="oauth_apps" src="img/github/oauth_apps.png" width="300px" />
+								   <hr />
+							   <p>after creating the application scroll down the page until you get to <span style="background-color: rgba(0,0,0,0.1); padding:5px; border-radius:10px;">Identifying and authorizing users</span></p> 								 
+							   <p>and set <span style="background-color: rgba(0,0,0,0.1); padding:5px; border-radius:10px;">User authorization callback URL | Webhook URL</span> that you got in Firebase</p>
+								  <img onclick="imageInflate(this.src)" alt="callback_url" src="img/github/callback_url.png" width="300px" />
+							   <p>and define the other mandatory parameters as you wish</p>
+							   <p>now go to <span style="background-color: rgba(0,0,0,0.1); padding:5px; border-radius:10px;">Generate a new client secret</span>, and get both keys that we will put in Firebase</p>
+								 <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="client_secret" src="img/github/client_secret.png" width="300px" />
+								 <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="keys_tokens_github_on_firebase" src="img/github/keys_tokens_github_on_firebase.png" width="300px" />
+							<p>If you haven't yet specified your app's SHA-1 fingerprint, do so now</p>
+								<p>we need to define SHA1 in the Firebase panel as we have done above:</p>
+							   <img onclick="imageInflate(this.src)" alt="sha1_in_firebase" src="img/smartphone/sha1_in_firebase.png" width="300px" />
+							   <hr />
+							   <p>In this case we will use the application test sha1 in Android Studio:</p>
+								<img onclick="imageInflate(this.src)" alt="get_sha1_test" src="img/smartphone/get_sha1_test.png" width="300px" />
+								<hr />
+							</strong>
+						  </div>
+					  <img alt="plusGithub" onclick="githubHint()" id="plusGithub" src="img/icons/minus.svg" width="30px" />
+					  </div>
+				  </td>
+				</tr>		
+				<tr>
+				  <td><img alt="Yahoo" src="https://gist.githubusercontent.com/Allanksr/dc16bd399c242f0137ca34f09f66e131/raw/e8c8d3624e84278a33e4c237c63c49e314319a94/yahoo.svg" width="30px" /></td>
+				  <td><a class="docs_links" href="https://firebase.google.com/docs/auth/android/yahoo-oauth" target="_blank">Yahoo</a>
+				  
+				  
+					<img alt="plusYahoo" onclick="yahooHint()" id="plusYahoo" src="img/icons/plus.svg" width="30px" />
+						<div id="yahooHint" style="display:none;">					 
+							<div>
+								<strong>
+
+								<p>In the <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://console.firebase.google.com/u/0/" target="_blank">Firebase console</a>, open the Auth section.</p>	
+								<p>On the Sign in method tab, enable the Yahoo provider.</p>	
+								<p>Add the Client ID and Client Secret from that provider's developer console to the provider configuration:</p>
+								<p>note the url provided by Firebase that we will use on Yahoo</p>
+								  <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="yahoo_provider" src="img/yahoo/yahoo_provider.png" width="300px" />
+								<hr />								
+									<p>In the <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://developer.yahoo.com/" target="_blank">Yahoo console</a>, create app.</p>	
+								  <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="yahoo_console_create_app" src="img/yahoo/yahoo_console_create_app.png" width="300px" />
+								  <hr />
+								<p>Be sure to select the two OpenID Connect API permissions: <span style="background-color: rgba(0,0,0,0.1); padding:5px; border-radius:10px;">profile</span> and <span style="background-color: rgba(0,0,0,0.1); padding:5px; border-radius:10px;">email</span></p>									
+								<p>When registering apps with these providers, be sure to register the url provided by Firebase domain for your project as the redirect domain for your app</p>
+								<img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="yahoo_console_creating" src="img/yahoo/yahoo_console_creating.png" width="300px" />
+								<hr />
+								<p>After creating the application, take the keys and place them in Firebase</p>
+								 <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="after_create_app" src="img/yahoo/after_create_app.png" width="300px" />
+								 <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="define_keys_in_firebase" src="img/yahoo/define_keys_in_firebase.png" width="300px" />						
+								 <hr />
+								<p>If you haven't yet specified your app's SHA-1 fingerprint, do so now</p>
+								<p>we need to define SHA1 in the Firebase panel as we have done above:</p>
+							   <img onclick="imageInflate(this.src)" alt="sha1_in_firebase" src="img/smartphone/sha1_in_firebase.png" width="300px" />
+							   <hr />
+							   <p>In this case we will use the application test sha1 in Android Studio:</p>
+								<img onclick="imageInflate(this.src)" alt="get_sha1_test" src="img/smartphone/get_sha1_test.png" width="300px" />
+								<hr />								
+								</strong>
+							</div>
+					<img alt="plusYahoo" onclick="yahooHint()" id="plusYahoo" src="img/icons/minus.svg" width="30px" />
+					</div>
+
+				  
+				  
+				  
+				  </td>
+				</tr>		
+				<tr>
+				  <td><img alt="Microsoft" src="https://gist.githubusercontent.com/Allanksr/dc16bd399c242f0137ca34f09f66e131/raw/e8c8d3624e84278a33e4c237c63c49e314319a94/microsoft.svg" width="30px" /></td>
+				  <td><a class="docs_links" href="https://firebase.google.com/docs/auth/android/microsoft-oauth" target="_blank">Microsoft</a>
+				  
+
+					<img alt="plusMicrosoft" onclick="microsoftHint()" id="plusMicrosoft" src="img/icons/plus.svg" width="30px" />
+						<div id="microsoftHint" style="display:none;">					 
+							<div>
+								<strong>
+								<p>In the <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://console.firebase.google.com/u/0/" target="_blank">Firebase console</a>, open the Auth section.</p>	
+								<p>On the Sign in method tab, enable the Microsoft provider.</p>	
+								<p>Add the Client ID and Client Secret from that provider's developer console to the provider configuration:</p>
+								<p>note the url provided by Firebase that we will use on Microsoft</p>
+								  <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="microsoft_provider" src="img/microsoft/microsoft_provider.png" width="300px" />
+								<hr />								
+									<p>In the <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://portal.azure.com/#home" target="_blank">Microsoft console</a>, follow those steps to create an app</p>	
+								  <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="microsoft_azure" src="img/microsoft/microsoft_azure.png" width="300px" />
+								  <hr />
+								  <p>to create app select <span style="background-color: rgba(0,0,0,0.1); padding:5px; border-radius:10px;"> Registers of application </span></p>
+								   <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="microsoft_register_app" src="img/microsoft/microsoft_register_app.png" width="300px" />
+								   <hr />
+								   <p>Fill in the requested fields and use your <span style="background-color: rgba(0,0,0,0.1); padding:5px; border-radius:10px;">callback URL</span> that you got in Firebase</p>
+								   <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="create_app" src="img/microsoft/create_app.png" width="300px" />
+								   <hr />
+								   <p>now write down the application ID (client) and let's create our Application Secret.</p>
+								   <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="get_id_app_after_create" src="img/microsoft/get_id_app_after_create.png" width="300px" />
+								   <hr />
+									<p>Fill in the requested fields.</p>
+								   <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="create_secret_key" src="img/microsoft/create_secret_key.png" width="300px" />
+								   <hr />
+									<p>write down the application secret now, you will not be able to see it again.</p>
+								   <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="note_secret_now" src="img/microsoft/note_secret_now.png" width="300px" />
+								   <hr />
+								   <p>now just put the application ID and the secret on the Sign Microsoft provider in Firebase</p>
+								   <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="define_keys_in_firebase" src="img/microsoft/define_keys_in_firebase.png" width="300px" />
+								   <hr />
+								</strong>
+							</div>
+						<img alt="plusMicrosoft" onclick="microsoftHint()" id="plusMicrosoft" src="img/icons/minus.svg" width="30px" />
+						</div>
+				  
+				  
+				  </td>
+				</tr>
+				
+				<tr>
+				  <td><img alt="Anonymous" src="https://gist.githubusercontent.com/Allanksr/dc16bd399c242f0137ca34f09f66e131/raw/e8c8d3624e84278a33e4c237c63c49e314319a94/anonimo.svg" width="30px" /></td>
+				  <td><a class="docs_links" href="https://firebase.google.com/docs/auth/android/anonymous-auth" target="_blank">Anonymous</a></td>
+				</tr>
+				
+			</tbody>
+		</table>
 		
-			  </div>
-		   </div>
+		</div>
 	</div>
-</div>
+ </div>	 
+</div>  
+		
+		<div class="divStyle" id="authService">
+		  <strong>FIRESTORE</strong>
+		   <img alt="firestoreAuth" onclick="firestoreMethods()" id="firestoreAuth" src="img/icons/plus.svg" width="30px" /> 		
+			<div style="display:none;" id="firestore">
+				<div>
+					<strong>
+					<p><a style="background-color: white; padding:5px; border-radius:10px; color:blue;" href="https://firebase.google.com/docs/firestore/quickstart" target="_blank">Firestore quickstart</a></p>	
+					<p>In the <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://console.firebase.google.com/u/0/" target="_blank">Firebase console</a>, open the Cloud Firestore section.</p>	
+					<p>and create a database</p>
+					<p>Enabling Cloud Firestore will prevent you from using Cloud Datastore in this project, especially in the application associated with App Engine</p>
+					  <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="create_database" src="img/firestore/create_database.png" width="300px" />
+					  <hr />
+					</strong>
+				</div>		
+			</div>
+		 </div> 
 
-	 <div class="docs">
-	 <h1>FirebaseAndroid</h1>
-<h4>In this project, the implementation of the following Firebase services is available</h4>
-<h6>AUTHENTICATION</h6>
-<table>
-	<tbody>
-		<tr>
-		  <th>Providers</th>
-		  <th>Description</th>
-	    </tr>		
-		<tr>
-		  <td><img alt="Email/password" src="https://gist.githubusercontent.com/Allanksr/6651ab2df9c4a96ffe57cb0d1c7feffe/raw/09ca68cca859df77dad3def6219b4bdf037ff122/email.svg" width="30px"></td>
-		  <td><a class="docs_links" href="https://support.google.com/firebase/answer/7000714?authuser=0">Email/password</a></td>
-		</tr>		
-		<tr>
-		  <td><img alt="Smartphone" src="https://gist.githubusercontent.com/Allanksr/841b03d95e463fa951522b90c3a81bce/raw/e55b704301fbb2f4e3872c69417b014b25186fe8/phone.svg" width="30px"></td>
-		  <td><a class="docs_links" href="https://firebase.google.com/docs/auth/?authuser=0">Smartphone we need SHA1</a></td>
-		</tr>		
-		<tr>
-		  <td><img alt="Google" src="https://gist.githubusercontent.com/Allanksr/dc16bd399c242f0137ca34f09f66e131/raw/e8c8d3624e84278a33e4c237c63c49e314319a94/google.svg" width="30px"></td>
-		  <td><a class="docs_links" href="https://developers.google.com/android/guides/client-auth?authuser=0">Google</a></td>
-		</tr>		
-	    <tr>
-		  <td><img alt="Play Games" src="https://gist.githubusercontent.com/Allanksr/dc16bd399c242f0137ca34f09f66e131/raw/e8c8d3624e84278a33e4c237c63c49e314319a94/playgames.svg" width="30px"></td>
-		  <td><a class="docs_links" href="https://firebase.google.com/docs/auth/android/play-games">Play Games</a></td>
-		</tr>		
-		<tr>
-		  <td><img alt="Facebook" src="https://gist.githubusercontent.com/Allanksr/dc16bd399c242f0137ca34f09f66e131/raw/e8c8d3624e84278a33e4c237c63c49e314319a94/facebook.svg" width="30px"></td>
-		  <td><a class="docs_links" href="https://firebase.google.com/docs/auth/android/facebook-login?authuser=0">Facebook</a></td>
-		</tr>		
-		<tr>
-		  <td><img alt="Twitter" src="https://gist.githubusercontent.com/Allanksr/dc16bd399c242f0137ca34f09f66e131/raw/e8c8d3624e84278a33e4c237c63c49e314319a94/twitter.svg" width="30px"></td>
-		  <td><a class="docs_links" href="https://firebase.google.com/docs/auth/android/twitter-login?authuser=0">Twitter</a></td>
-		</tr>		
-		<tr>
-		  <td><img alt="Github" src="https://gist.githubusercontent.com/Allanksr/dc16bd399c242f0137ca34f09f66e131/raw/e8c8d3624e84278a33e4c237c63c49e314319a94/github.svg" width="30px"></td>
-		  <td><a class="docs_links" href="https://firebase.google.com/docs/auth/android/github-auth?authuser=0">Github</a></td>
-		</tr>		
-		<tr>
-		  <td><img alt="Yahoo" src="https://gist.githubusercontent.com/Allanksr/dc16bd399c242f0137ca34f09f66e131/raw/e8c8d3624e84278a33e4c237c63c49e314319a94/yahoo.svg" width="30px"></td>
-		  <td><a class="docs_links" href="https://firebase.google.com/docs/auth/android/yahoo-oauth">Yahoo</a></td>
-		</tr>		
-		<tr>
-		  <td><img alt="Microsoft" src="https://gist.githubusercontent.com/Allanksr/dc16bd399c242f0137ca34f09f66e131/raw/e8c8d3624e84278a33e4c237c63c49e314319a94/microsoft.svg" width="30px"></td>
-		  <td><a class="docs_links" href="https://firebase.google.com/docs/auth/android/microsoft-oauth">Microsoft</a></td>
-		</tr>	
-		<tr>
-		  <td><img alt="Apple" src="https://gist.githubusercontent.com/Allanksr/dc16bd399c242f0137ca34f09f66e131/raw/e8c8d3624e84278a33e4c237c63c49e314319a94/apple.svg" width="30px"></td>
-		  <td><a class="docs_links" href="https://firebase.google.com/docs/auth/android/apple">Apple</a></td>
-		</tr>		
-		<tr>
-		  <td><img alt="Anonymous" src="https://gist.githubusercontent.com/Allanksr/dc16bd399c242f0137ca34f09f66e131/raw/e8c8d3624e84278a33e4c237c63c49e314319a94/anonimo.svg" width="30px"></td>
-		  <td><a class="docs_links" href="https://firebase.google.com/docs/auth/android/anonymous-auth">Anonymous</a></td>
-		</tr>
-	</tbody>
-</table>
+		 <div class="divStyle" id="authService">
+		  <strong>REALTIME DATABASE</strong>
+		   <img alt="databaseAuth" onclick="databaseMethods()" id="databaseAuth" src="img/icons/plus.svg" width="30px" /> 		
+			<div style="display:none;" id="database">
+				<div>
+					<strong>
+					<p><a style="background-color: white; padding:5px; border-radius:10px; color:blue;" href="https://firebase.google.com/docs/database/android/start" target="_blank">Database quickstart</a></p>	
+					<p>In the <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://console.firebase.google.com/u/0/" target="_blank">Firebase console</a>, open the Realtime Database section.</p>	
+					<p>and create a database</p>						 
+					</strong>
+				</div>		
+			</div>
+		 </div> 
+	 
+		 <div class="divStyle" id="authService">
+		   <strong>STORAGE</strong>
+			 <img alt="storageAuth" onclick="storageMethods()" id="storageAuth" src="img/icons/plus.svg" width="30px" /> 		
+			  <div style="display:none;" id="storage">
+				<div>
+					<strong>
+					<p><a style="background-color: white; padding:5px; border-radius:10px; color:blue;" href="https://firebase.google.com/docs/storage/android/start" target="_blank">Storage quickstart</a></p>	
+					<p>In the <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://console.firebase.google.com/u/0/" target="_blank">Firebase console</a>, open the Storage section.</p>	
+					<p>and copy path to use in app</p>	
+					 <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="create_database" src="img/storage/copy_path.png" width="300px" />
+					  <hr />
+					 <p><a style="background-color: white; padding:5px; border-radius:10px; color:blue;" href="https://firebase.google.com/docs/storage/android/upload-files" target="_blank">Upload Files</a></p>	
+					 <p>In test mode enable the rules to read and write to Storage</p>
+					  <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="create_database" src="img/storage/test_mode.png" width="300px" />
+					  <hr />
+					  <p>The rules should only be like this in test mode, in production mode you must enable some type of authentication to protect data</p>
+					  <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="create_database" src="img/storage/production_mode.png" width="300px" />
+					  <hr />
+					</strong>
+				</div>		
+			</div>
+		 </div>
 
-	 </div>
+		
+		<div class="divStyle" id="authService">
+			<strong>HOSTING</strong>
+			<img alt="hostingAuth" onclick="hostingMethods()" id="hostingAuth" src="img/icons/plus.svg" width="30px" /> 		
+				<div style="display:none;" id="hosting">								
+				<strong>
+				 <p><a style="background-color: white; padding:5px; border-radius:10px; color:blue;" href="https://firebase.google.com/docs/hosting/quickstart" target="_blank">Hosting quickstart</a></p>	
+				  <p>We can use hosting for several purposes. In this case, we will use hosting and functions to create an end point API.</p>
+				  <p>Download the <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://console.firebase.google.com/u/0/" target="_blank">hosting-android</a> folder and follow the steps</p>					  
+				  <p>In this step we will use nodeJS to create our API end point</p>
+				   <p>Download and install NodeJS</p>
+				  <p><a style="background-color: white; padding:5px; border-radius:10px; color:blue;" href="https://nodejs.org/en/download/" target="_blank">NodeJS for windows</a></p>	
+				   <p>Follow the steps in this documentation and watch the video if you still have questions</p>
+					<p><a style="background-color: white; padding:5px; border-radius:10px; color:blue;" href="https://firebase.google.com/docs/hosting/functions" target="_blank">Hosting/functions</a></p>
+					<p>Install Firebase CLI if you haven't already</p>
+					  <p><a style="background-color: white; padding:5px; border-radius:10px; color:blue;" href="https://firebase.google.com/docs/hosting?hl=pt-br#implementation_path" target="_blank">Consultation material on the Firebase CLI</a></p>
+					  <p>Open the CMD command prompt and enter the functions folder.</p>
+					  <p>Enter the command<span style="background-color: rgba(0,0,0,0.1); padding:5px; border-radius:10px;"> firebase init functions</span> choose the project and DO NOT overwrite index.js and install NODE dependencies</p>
+					 <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="create_database" src="img/hosting/init-functions.png" width="300px" />
+					  <hr />
+					  <p>Now install the express module</p>
+					 <p>Enter the command<span style="background-color: rgba(0,0,0,0.1); padding:5px; border-radius:10px;"> npm i express</span></p>
+					 <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="create_database" src="img/hosting/express.png" width="300px" />
+					  <hr />
+					  <p>Okay, take the test to see if everything is correct</p>
+					  <p>Enter the command<span style="background-color: rgba(0,0,0,0.1); padding:5px; border-radius:10px;">cd..</span> to access the hosting folder</p>
+					  <p>Enter the command<span style="background-color: rgba(0,0,0,0.1); padding:5px; border-radius:10px;">firebase serve --only functions,hosting</span></p>
+					   <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="create_database" src="img/hosting/test.png" width="300px" />
+					  <hr />
+					  <p>if everything went as expected we have a local server running on port 5000</p>
+					  <p>You can now finish the server and deploy the role</p>
+					  <p>Enter the command <span style="background-color: rgba(0,0,0,0.1); padding:5px; border-radius:10px;">firebase deploy</span></p>
+					  <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="create_database" src="img/hosting/deploy.png" width="300px" />
+					  <hr />
+				</strong>
+				</div>
+		</div>
+		
+		
+		 <div class="divStyle" id="authService">
+			<strong>FUNCTIONS</strong>
+			<img alt="functionsAuth" onclick="functionsMethods()" id="functionsAuth" src="img/icons/plus.svg" width="30px" /> 		
+				<div style="display:none;" id="functions">								
+				<strong>
+				 <p><a style="background-color: white; padding:5px; border-radius:10px; color:blue;" href="https://firebase.google.com/docs/functions/get-started" target="_blank">Functions quickstart</a></p>	                    
+				  <p>In this model we will call a function of Cloud functions from the application</p>
+				  <p><a style="background-color: white; padding:5px; border-radius:10px; color:blue;" href="https://firebase.google.com/docs/functions/callable" target="_blank">Call functions from your application</a></p>	                    
+				 <p><span style="background-color: rgba(255,255,255,0.7); padding:5px;">We will perform a function in two ways</span></p>
+				 <p><span style="background-color: rgba(0,0,0,0.1); padding:5px; border-radius:10px;">A simple call that will return the current date</span></p>
+				 <p><span style="background-color: rgba(0,0,0,0.1); padding:5px; border-radius:10px;">An advanced call, where we will pass data to the function to execute a currency conversion API</span></p>
+				
+				<p>Download the <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://console.firebase.google.com/u/0/" target="_blank">functions-android</a> folder and follow the steps</p>					  
+				  <p>In this step we will use nodeJS to create a function end point</p>
+				   <p>Download and install NodeJS</p>
+				  <p><a style="background-color: white; padding:5px; border-radius:10px; color:blue;" href="https://nodejs.org/en/download/" target="_blank">NodeJS for windows</a></p>	
+				  
+				
+				 <p>Install Firebase CLI if you haven't already</p>
+				 <p><a style="background-color: white; padding:5px; border-radius:10px; color:blue;" href="https://firebase.google.com/docs/hosting?hl=pt-br#implementation_path" target="_blank">Consultation material on the Firebase CLI</a></p>
+				 <p>Access functions-android folder through the CMD command prompt</p>
+				 <p>Enter the command<span style="background-color: rgba(0,0,0,0.1); padding:5px; border-radius:10px;"> firebase init functions</span> choose the project and DO NOT overwrite index.js and install NODE dependencies</p>
+				 
+				  <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="create_database" src="img/functions/init-functions.png" width="300px" />
+					  <hr />
+				 
+				 <p>Access the functions folder</p>
+				 <p>Now install the get-json module</p>
+				<p>Enter the command <span style="background-color: rgba(0,0,0,0.1); padding:5px; border-radius:10px;">npm i get-json</span></p>
+				 <p>if everything went as expected you can deploy the role</p>				
+				<p>Enter the command <span style="background-color: rgba(0,0,0,0.1); padding:5px; border-radius:10px;">firebase deploy</span></p>
+				 <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="create_database" src="img/functions/install-get-json-and-deploy.png" width="300px" />
+					  <hr />
+				</strong>
+				</div>
+		 </div>
+		 
+		  <div class="divStyle" id="authService">
+			<strong><a style="color:black;" href="https://firebase.google.com/docs/crashlytics/get-started?platform=android" target="_blank">CRASHLYTICS <img alt="link" src="img/icons/link.svg" width="30px" /></a></strong>
+			</div>
+			
+			 <div class="divStyle" id="authService">
+			  <strong><a style="color:black;" href="https://firebase.google.com/docs/perf-mon/get-started-android" target="_blank">PERFORMANCE <img alt="link" src="img/icons/link.svg" width="30px" /></a></strong>
+			</div>
+			
+			 <div class="divStyle" id="authService">
+				  <strong>CLOUD MESSAGING</strong>
+				  <img alt="messagingAuth" onclick="messagingMethods()" id="messagingAuth" src="img/icons/plus.svg" width="30px" /> 		
+					<div style="display:none;" id="messaging">								
+						<strong>
+						<p><a style="background-color: white; padding:5px; border-radius:10px; color:blue;" href="https://firebase.google.com/docs/cloud-messaging/android/first-message" target="_blank">Cloud Messaging quickstart</a></p>	                    
+                        <p>To use Firebase Cloud Messaging, we will again rely on Cloud Functions.</p>
+						<p>Download the <a style="background-color: white; padding:5px; border-radius:10px; color:green;" href="https://console.firebase.google.com/u/0/" target="_blank">cloud_message-android</a> folder and follow the steps</p>	
+						 <p>We will need firebase-admin to send notifications using Firebase Functions, for that we will need the credentials of one of a service account linked to the chosen project.</p>
+						 <p>To obtain a credential linked to a project, follow the steps.</p>
+						 <p>In the Firebase console choose the project, then Project overview, project settings, service accounts, click on Google Cloud Platform service accounts.</p>
+						  <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="create_database" src="img/messaging/service_account.png" width="300px" />
+						   <hr />
+						 <p>Now in the google cloud console, access the Firebase Admin SDK Service Agent.</p>
+						 <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="create_database" src="img/messaging/google_cloud_console.png" width="300px" />
+						   <hr />
+						 <p>Click on add key, create new JSON type key, the download is done automatically.</p>
+						 <p>This file is secret, put it in the functions folder of the cloud_message-android folder.</p>
+						  <img style="border: 3px solid red;" onclick="imageInflate(this.src)" alt="create_database" src="img/messaging/create_credential.png" width="300px" />
+						   <hr />
+						</strong>
+					</div>
+				  
+				</div>
+			 
+			  <div class="divStyle" id="authService">
+				  <strong><a style="color:black;" href="https://firebase.google.com/docs/remote-config/use-config-android" target="_blank">REMOTE CONFIG <img alt="link" src="img/icons/link.svg" width="30px" /></a></strong>
+				</div>
+				
+				<div class="divStyle" id="authService">
+				  <strong>
+				  <a style="color:black;" href="https://firebase.google.com/docs/admob/android/quick-start" target="_blank">ADMOB<img alt="link" src="img/icons/link.svg" width="30px" /></a>
+				  
+				  </strong>
+				</div>
+			 
+   </div>
+
+	 <div onclick="imageInflate('');" id="image_div" class="image_onclick">
+		<img id="image_see"/>
+	 </div>		 
+	 
+<script src="js/open_close_auth.js"></script>
+<script src="js/open_close_firestore.js"></script>
+<script src="js/open_close_database.js"></script>
+<script src="js/open_close_storage.js"></script>
+<script src="js/open_close_hosting.js"></script>
+<script src="js/open_close_functions.js"></script>
+<script src="js/open_close_messaging.js"></script>
+	
+	
 	
 <script>
 var menu_container_action = document.getElementById("menu_container_action")
@@ -109,6 +652,7 @@ var nova = {
 		path: "https://assets9.lottiefiles.com/packages/lf20_SiFYir.json"
 	}
 lottie.loadAnimation(nova)
+
 
 var showItems = false
 function showHideHamburguer(x) {
@@ -151,20 +695,6 @@ var currentScrollPos = window.pageYOffset;
 }
 
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <footer class="foot">
  <p class="copyright">© 2020 Allanksr, Distribuído por Github | Google</p>
 </footer>

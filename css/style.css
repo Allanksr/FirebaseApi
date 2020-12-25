@@ -9,6 +9,27 @@ body {
 	  background-color: #d1d5da;
 	}
 
+.image_onclick{
+	display:none;	
+}
+.image_onclick_view{
+	 width:100%;
+	  height:100%;
+	 background-color: rgba(0,0,0,0.4);
+	 position:fixed;
+	 top:0px;
+	 z-index:1;
+}
+
+#image_see{
+ max-width: 99%;
+  max-height: 99%;
+   border: 5px solid red;
+   border-radius:10px;
+   margin:10px;
+   padding:10px;
+}
+
 a:link {
   color: #fff;
 }
@@ -33,7 +54,7 @@ a:active {
 	  position: fixed;
 	  top: 0;
 	  width: 100%;
-	  transition: top 0.5s;
+	  transition: top 1.5s;
 	}
 .menu_container{
   display:none;
@@ -50,7 +71,7 @@ a:active {
 	   text-align: center;
 	    position: relative;
 	   margin:20px;
-	   animation: myfirst 2s;
+	   animation: myfirst 5s;
 	}
 	div.github_icon{
 		float:left;
@@ -113,6 +134,19 @@ a.docs_links:active {
    border-radius:10px;
 }
 
+.divStyle{
+	margin:30px;
+	padding-top:5px;
+	 border-radius:10px;
+	 border-style: solid;
+     border-color: #24292e;
+}
+
+div.github_icon_menu{
+		width:40px;
+		margin:10px;
+	}
+
 
 @media (min-width: 1281px) {
   body {
@@ -145,7 +179,7 @@ a:active {
 	  position: fixed;
 	  top: 0;
 	  width: 100%;
-	  transition: top 0.5s;
+	  transition: top 1.5s;
 	}
 .menu_container{
   display:none;
@@ -162,7 +196,7 @@ a:active {
 	   text-align: center;
 	    position: relative;
 	   margin:20px;
-	   animation: myfirst 2s;
+	   animation: myfirst 5s;
 	}
 	div.github_icon{
 		float:left;
@@ -229,7 +263,7 @@ a:active {
 	  position: fixed;
 	  top: 0;
 	  width: 100%;
-	  transition: top 0.5s;
+	  transition: top 1.5s;
 	}
 .menu_container{
   display:none;
@@ -246,7 +280,7 @@ a:active {
 	   text-align: center;
 	    position: relative;
 	   margin:20px;
-	   animation: myfirst 2s;
+	   animation: myfirst 5s;
 	}
 	div.github_icon{
 		float:left;
@@ -310,7 +344,7 @@ CELULARES
   height: 10px;
   background-color: #fff;
   margin: 14px 0;
-  transition: 0.4s;
+  transition: 1.4s;
 }
 
 .change .bar1 {
@@ -337,7 +371,7 @@ CELULARES
 	   margin:20px;
 	   position: relative;
 	  float:left;
-	   animation: mySecond 2s;
+	   animation: mySecond 5s;
 	}
 		@keyframes mySecond {
 	  0%   { left: 20%;}
@@ -375,7 +409,7 @@ CELULARES
   height: 10px;
   background-color: #fff;
   margin: 14px 0;
-  transition: 0.4s;
+  transition: 1.4s;
 }
 
 .change .bar1 {
@@ -402,7 +436,7 @@ CELULARES
 	   margin:20px;
 	   position: relative;
 	  float:left;
-	   animation: mySecond 2s;
+	   animation: mySecond 5s;
 	}
 		@keyframes mySecond {
 	  0%   { left: 20%;}
@@ -440,7 +474,7 @@ CELULARES
   height: 10px;
   background-color: #fff;
   margin: 14px 0;
-  transition: 0.4s;
+  transition: 1.4s;
 }
 
 .change .bar1 {
@@ -467,7 +501,7 @@ CELULARES
 	   margin:20px;
 	   position: relative;
 	  float:left;
-	   animation: mySecond 2s;
+	   animation: mySecond 5s;
 	}
 		@keyframes mySecond {
 	  0%   { left: 20%;}
@@ -505,7 +539,7 @@ CELULARES
   height: 5px;
   background-color: #fff;
   margin: 10px 0;
-  transition: 0.4s;
+  transition: 1.4s;
 }
 
 .change .bar1 {
@@ -539,7 +573,7 @@ img.profile_img{
 	   margin:20px;
 	   position: relative;
 	  float:left;
-	   animation: mySecond 2s;
+	   animation: mySecond 5s;
 	}
 		@keyframes mySecond {
 	  0%   { left: 20%;}
