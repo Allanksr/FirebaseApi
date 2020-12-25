@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Firebase</string>
+    <string name="firebaseImplementation">Firebase Implementation</string>
+
+    <string name="firebaseAuthentication">Firebase Authentication</string>
+    <string name="firebaseEmailAuthentication">Email Authentication</string>
+    <string name="firebasePhoneAuthentication">SmarthPhone Authentication</string>
+    <string name="firebaseGoogleAuthentication">Google Authentication</string>
+    <string name="firebasePlayGamesAuthentication">PlayGames Authentication</string>
+    <string name="firebaseFacebookAuthentication">Facebook Authentication</string>
+    <string name="firebaseTwitterAuthentication">Twitter Authentication</string>
+    <string name="firebaseGithubAuthentication">Github Authentication</string>
+    <string name="firebaseYahooAuthentication">Yahoo Authentication</string>
+    <string name="firebaseMicrosoftAuthentication">Microsoft Authentication</string>
+    <string name="firebaseAnonymousAuthentication">Anonymous Authentication</string>
+
+    <string name="firestoreCloudStore">Cloud FireStore</string>
+    <string name="databaseActivity">Realtime Database</string>
+    <string name="storageActivity">Storage</string>
+    <string name="hostingActivity">Hosting</string>
+    <string name="functionsActivity">Functions</string>
+    <string name="crashlyticsActivity">Crashlytics</string>
+    <string name="messageActivity">Cloud Message</string>
+    <string name="remoteConfigActivity">Remote Config</string>
+    <string name="admobActivity">AdMob</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="userData">User data</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phoneNumber">Phone number</string>
+    <string name="verificationCode">Verification code</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in_without_password">Sign in without Password</string>
+    <string name="signOut">SignOut</string>
+    <string name="confirm">Confirm</string>
+    <string name="update">Update</string>
+    <string name="upload">Upload</string>
+    <string name="request">Request</string>
+    <string name="fill_field">fill the field</string>
+    <string name="signin_link_was_sent">signin link was sent to</string>
+    <string name="reset_link_was_sent">reset link was sent to</string>
+    <string name="error">error</string>
+    <string name="close">Close</string>
+    <string name="wait">wait</string>
+    <string name="accountAlreadyExists">account already exists at the provider</string>
+    <string name="findProvider">if you want to know which provider is registered use your email</string>
+    <string name="provider">Provider</string>
+    <string name="operation_was_canceled">The web operation was canceled by the user.</string>
+
+    <string name="does_not_have_password">reset password?</string>
+
+    <string name="facebook_app_id" translatable="false">398850581255620</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb398850581255620</string>
+
+    <string-array name="coins_array">
+        <item>USD</item>
+        <item>USDT</item>
+        <item>CAD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>ARS</item>
+        <item>BTC</item>
+        <item>LTC</item>
+        <item>JPY</item>
+        <item>CHF</item>
+        <item>AUD</item>
+        <item>CNY</item>
+        <item>ILS</item>
+        <item>ETH</item>
+        <item>XRP</item>
+    </string-array>
+</resources>

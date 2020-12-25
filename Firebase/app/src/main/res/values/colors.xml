@@ -1,0 +1,46 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="colorPrimaryDark">#202020</color>
+    <color name="colorPrimary">#0d0d0d</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="laranja">#ff9900</color>
+    <color name="laranjaescuro">#b36b00</color>
+    <color name="laranjaclaro">#ffe0b3</color>
+    <color name="preto">#000000</color>
+    <color name="branco">#ffffff</color>
+    <color name="vermelha">#ff0000</color>
+    <color name="amarela">#FFFF00</color>
+    <color name="verde">#00cc00</color>
+    <color name="verdescuro">#004d00</color>
+    <color name="verdeclaro">#4dff4d</color>
+    <color name="azul">#0000ff</color>
+    <color name="azulescuro">#0000b5</color>
+    <color name="azulclaro">#4466ff</color>
+    <color name="cinza">#6e6e6f</color>
+    <color name="cinzaclaro">#cecece</color>
+    <color name="cinzaescuro">#3c3c3c</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="transparente">#7F000000</color>
+    <color name="menostransparente">#a0000000</color>
+    <color name="barrasignal">#505050</color>
+    <color name="invisivel">#00000000</color>
+    <color name="signal">#899db3</color>
+    <color name="signaldraw">#17343D</color>
+    <color name="rosa">#ff00ff</color>
+    <color name="rosaescuro">#cc00cc</color>
+    <color name="rosaclaro">#ff66ff</color>
+    <color name="selector_focused_red">#ff0000</color>
+    <color name="seekbarfree">#ff0099</color>
+    <color name="seekbar">#ffff99</color>
+
+    <color name="verde0">#99ff99</color>
+    <color name="verde1">#66ff66</color>
+    <color name="verde2">#33ff33</color>
+    <color name="verde3">#00ff00</color>
+    <color name="verde4">#00cc00</color>
+    <color name="verde5">#009900</color>
+    <color name="verde6">#008000</color>
+    <color name="verde7">#006600</color>
+    <color name="verde8">#004d00</color>
+
+</resources>

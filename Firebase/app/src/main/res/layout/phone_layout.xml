@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authentication.mvpSmartphone.Phone">
+
+    <TextView
+        android:id="@+id/tv_Firebase_Email_Authentication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/firebasePhoneAuthentication"
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <RelativeLayout
+        android:id="@+id/rl_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26">
+
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/welcome"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_user_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_welcome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/userData"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_disconect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_data"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_normal_effect"
+            android:text="@string/signOut" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44">
+
+        <EditText
+            android:id="@+id/edt_PhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:autofillHints="@string/fill_field"
+            android:ems="10"
+            android:hint="@string/phoneNumber"
+            android:inputType="phone"
+            android:text="+5518999999999" />
+
+        <Button
+            android:id="@+id/bt_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_PhoneNumber"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_border_effect"
+            android:text="@string/sign_in" />
+
+        <Button
+            android:id="@+id/bt_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_PhoneNumber"
+            android:layout_alignParentRight="true"
+            android:layout_margin="30dp"
+            android:background="@drawable/button_normal_effect"
+            android:text="@string/sign_up" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_code_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44">
+
+        <EditText
+            android:id="@+id/edt_verificationCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:autofillHints="@string/fill_field"
+            android:ems="10"
+            android:hint="@string/verificationCode"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/bt_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_verificationCode"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_normal_effect"
+            android:text="@string/confirm" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_phone_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <include
+        android:id="@+id/include_loading"
+        layout="@layout/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

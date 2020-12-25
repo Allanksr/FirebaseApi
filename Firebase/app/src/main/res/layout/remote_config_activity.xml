@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".remoteConfig.RemoteConfigActivity">
+
+
+    <TextView
+        android:id="@+id/tv_Firebase_RemoteConfig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_normal_effect"
+        android:text="@string/remoteConfigActivity"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:id="@+id/rl_container_remoteConfig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26999998">
+
+        <TextView
+            android:id="@+id/tv_remoteConfig_response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remote Config Response"
+            android:maxLines="6"
+            android:singleLine="false"/>
+
+        <Button
+            android:id="@+id/bt_request_remoteData"
+            android:layout_below="@+id/tv_remoteConfig_response"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_normal_effect"
+            android:text="Request Remote Data" />
+
+        <Button
+            android:id="@+id/bt_remoteConfigSetCache"
+            android:layout_below="@+id/bt_request_remoteData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_normal_effect"
+            android:text="Request Remote Data With Cache" />
+
+    </RelativeLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/la_timer_cache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="clock.json"
+        app:lottie_loop="false" />
+
+    <TextView
+        android:id="@+id/tv_timer_cache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="6"
+        android:singleLine="false"
+        android:text="Remote Config Response"
+
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
